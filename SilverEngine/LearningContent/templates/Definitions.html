@@ -1,0 +1,9 @@
+{% extends "SilverEngine.html" %}
+{% block definitions %}
+{% for item in definitions %}
+<p class="definition">
+<h1 class="definition">{{ item.name }}</h1>
+{{ item.definition }}
+</p>
+{% endfor %}
+{% endblock %}
